@@ -1,0 +1,40 @@
+<DOCTYPE! html>
+    <html>
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+</head>
+
+<body onload="loadScore()">
+<h1>Trivia Yo</h1>
+<h2 id="currCat"><em></em></h2>
+<button onclick="myFunction()" id="Category">Random Category</button>
+<div class="dropdown">
+        <!-- <button class="dropbtn">Change Difficulty</button> -->
+        <div class="dropdown-content">
+        <Button id="easy" onclick="easyFunction()">Easy</Button>
+        <Button id="medium" onclick="mediumFunction()">Medium</Button>
+        <Button id="hard" onclick="hardFunction()">Hard</Button>
+        </div>
+      </div>
+<!-- <button onclick="mydiffFunction()" id="Category" class="dropdown">difficulty</button> -->
+
+
+        <h2 id="question"></h2>
+       <div id="difficulty"></div>
+       <div id="correct"></div>
+        
+       <div class="btn-group">
+            <button id="resp1" onclick="myFunction1()"></button>
+            <button id="resp2" onclick="myFunction2()"></button>
+            <button id="resp3" onclick="myFunction3()"></button>
+            <button id="resp4" onclick="myFunction4()"></button>
+          </div>
+       <h3 id="correctAns"></h3>
+      
+       <h2 id="score"></h2>
+
+    <script src="script.js"></script>
+</body>
+
+    </html>
